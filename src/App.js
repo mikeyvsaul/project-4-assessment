@@ -11,24 +11,12 @@ class App extends Component {
     super();
     this.state = {
       current: 0,
-      // selected: circles[0]
     }
   }
 
-  // componentDidMount()
 
   handleClick = (circle) => {
     this.setState({current: circle})
-  }
-
-  toggle = idx => {
-    let newTodos = [...this.state.todos];
-    newTodos[idx].completed = !newTodos[idx].completed;
-    this.setState({todos: newTodos});
-  }
-
-  updateCurrent = evt => {
-    this.setState({current: evt.target.value})
   }
 
   render() {
